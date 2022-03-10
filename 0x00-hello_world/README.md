@@ -1,1 +1,1 @@
-Learning basics used in C as a progralling language
+Learning basics used in C as a programming language
