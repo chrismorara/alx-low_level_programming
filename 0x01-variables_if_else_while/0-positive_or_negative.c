@@ -5,22 +5,21 @@
 /**
 * main - entry point
 *
-* Return: 0 on success. Error code otherwise
+* Return: Always 0 (Success):wq
 */
 int main(void)
-{int n, l;	
-srand(time(0));
-
-	n = rand() - RAND_MAX / 2;
-	l = n % 10;
+{	
+	int n;	
 	
-	if (l > 5)
-		printf("l of %d is %d and is greater than 5\n", n, l);
-	else if (l == 0)
-		printf("l of %d is %d and 0\n", n, l);
-	else if (l < 6 && l != 0)
-	{printf("l of %d is %d and is less than 6 and ", n, l);
-	printf("not 0\n");
-	}
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
+		
 	return (0);
 }
