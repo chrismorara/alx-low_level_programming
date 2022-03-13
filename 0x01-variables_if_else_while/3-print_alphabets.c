@@ -17,8 +17,7 @@ int main(void)
 			putchar(a);
 			a++;
 		} else
-		{	
-			putchar(A);
+		{	putchar(A);
 			A++;
 		}
 		n++;
