@@ -9,21 +9,20 @@
  */
 
 int main(void)
-{	int d, p, q;
-	for (d = '0'; d < '9'; d++)
+{
+	int i, j, k;
+
+	for (i = 0; i <= 9; i++)
 	{
-		for (p = d + 1; p <= '9'; q++)
+		for (j = i + 1; j <= 9; j++)
 		{
-			for (q = p + 1; q <= '9'; q++)
+			for (k = j + 1; k <= 9; k++)
 			{
-				if ((p!=d) !=q)
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (((i * 100) + (j * 10) + k) < 789)
 				{
-					putchar(d);
-					putchar(p);
-					putchar(q);
-
-					if (d == '7' && p == '8')
-
 					putchar(',');
 					putchar(' ');
 				}
