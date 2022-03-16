@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * main - print _putchar
+ * main - check the code for students
+ *
+ * Program that prints _putchar followed by a new line
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char *s= "_putchar";
+	char *s = "_putchar";
 
 	while (*s != '\0')
 	{
