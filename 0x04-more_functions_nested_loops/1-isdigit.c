@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
- * _isdigit - checks if parameter is a number between 0 to 9
- * @c: input number
+/**
+ *_isdigit - checks if parameter is a number between 0 to 9
+ * @c: a variable that stores digits
  * Return: 1 if is a number (0 to 9), 0 in other case
  */
 
