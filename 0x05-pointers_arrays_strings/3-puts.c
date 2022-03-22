@@ -5,9 +5,9 @@
  * @str: print a string
  * Return: always 0.
  */
-void _puts(char *str);
+void _puts(char *str)
 {
-	int = 0;
+	int i = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
