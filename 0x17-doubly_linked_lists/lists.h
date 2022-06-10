@@ -22,17 +22,6 @@ typedef struct dlistint_s
   * @x: data
   * Return: ptr to new node
   */
-dlistint_t *getNewNode(int x)
-{
-	dlistint_t *newNode = (dlistint_t *)malloc(sizeof(dlistint_t));
-
-	if (newNode == NULL)
-		return (NULL);
-	newNode->n = x;
-	newNode->prev = NULL;
-	newNode->next = NULL;
-	return (newNode);
-}
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
